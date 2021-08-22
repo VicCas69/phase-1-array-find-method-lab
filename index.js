@@ -1,14 +1,11 @@
 function superbowlWin(superWin){
-   let wins;
-   for(let items of superWin){
-       if(superWin[items] === 'W'){
-            if(true){
-                return superWin.year = wins
-            }        
-       }
-    }   
-   return wins
-}     
+    let win = superWin.find(item => item.result === 'W');
+    if(!!win){
+        return win.year
+    }
+    //return win.year
+}
+   
 
 
 
